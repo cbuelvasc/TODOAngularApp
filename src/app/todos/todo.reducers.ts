@@ -2,7 +2,7 @@ import {createReducer, on} from '@ngrx/store';
 import * as actions from './todo.actions';
 import {Todo} from './models/todo';
 
-export const initialState: Todo[] = new Array(new Todo('Salvar al mundo'));
+export const initialState: Todo[] = new Array(new Todo('Kiss the love of your life'), new Todo('Smile and be happy'));
 
 const _todoReducer = createReducer(initialState,
   on(actions.clearTODO, state => state.filter(todo => !todo.completed)),
